@@ -20,7 +20,7 @@ function App() {
   const generateDiceNumber = async () => {
     try {
       console.clear();
-      const res = await axios.get('http://localhost:3000/api/diceNumber')
+      const res = await axios.get('/api/diceNumber')
       setDiceNumber1(res.data.dice1)
       setDiceNumber2(res.data.dice2)
       setTimeout(() => {
@@ -33,7 +33,7 @@ function App() {
 
   const checkResult = async ( diceNumber1, diceNumber2, guessedInput ) => {
     try {
-      const res = await axios.post('http://localhost:3000/api/checkGuess', { diceNumber1, diceNumber2, guessedInput });
+      const res = await axios.post('/api/checkGuess', { diceNumber1, diceNumber2, guessedInput });
       setGuessResult(res?.data);
       pointsCalculation(points, bet, guessedInput, guessResult)
     } catch (error) {
@@ -43,7 +43,7 @@ function App() {
 
   const pointsCalculation = async (points, bet, guessedInput, guessResult) => {
     try {
-      const res = await axios.post('http://localhost:3000/api/calculatePoints', { totalPoints: points, betAmount: bet, guessResult, guessedInput });
+      const res = await axios.post('/api/calculatePoints', { totalPoints: points, betAmount: bet, guessResult, guessedInput });
       setPoints(res.data)
     } catch (error) {
       console.log("Error", error?.message);
