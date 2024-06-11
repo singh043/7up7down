@@ -1,0 +1,27 @@
+#root {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* place-items: center; */
+}
+
+.dice {
+  display: flex;
+  gap: 20px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.bet {
+  display: flex;
+  gap: 20px;
+}

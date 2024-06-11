@@ -1,0 +1,145 @@
+.face {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #333;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #333;
+}
+
+.face-1 .dot {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.face-2 .dot:nth-child(1) {
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+}
+
+.face-2 .dot:nth-child(2) {
+    top: 75%;
+    left: 75%;
+    transform: translate(-75%, -75%);
+}
+
+.face-3 .dot:nth-child(1) {
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+}
+
+.face-3 .dot:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.face-3 .dot:nth-child(3) {
+    top: 75%;
+    left: 75%;
+    transform: translate(-75%, -75%);
+}
+
+.face-4 .dot:nth-child(1) {
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+}
+
+.face-4 .dot:nth-child(2) {
+    top: 25%;
+    left: 75%;
+    transform: translate(-75%, -25%);
+}
+
+.face-4 .dot:nth-child(3) {
+    top: 75%;
+    left: 25%;
+    transform: translate(-25%, -75%);
+}
+
+.face-4 .dot:nth-child(4) {
+    top: 75%;
+    left: 75%;
+    transform: translate(-75%, -75%);
+}
+
+.face-5 .dot:nth-child(1) {
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+}
+
+.face-5 .dot:nth-child(2) {
+    top: 25%;
+    left: 75%;
+    transform: translate(-75%, -25%);
+}
+
+.face-5 .dot:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.face-5 .dot:nth-child(4) {
+    top: 75%;
+    left: 25%;
+    transform: translate(-25%, -75%);
+}
+
+.face-5 .dot:nth-child(5) {
+    top: 75%;
+    left: 75%;
+    transform: translate(-75%, -75%);
+}
+
+.face-6 .dot:nth-child(1) {
+    top: 25%;
+    left: 25%;
+    transform: translate(-25%, -25%);
+}
+
+.face-6 .dot:nth-child(2) {
+    top: 25%;
+    left: 75%;
+    transform: translate(-75%, -25%);
+}
+
+.face-6 .dot:nth-child(3) {
+    top: 50%;
+    left: 25%;
+    transform: translate(-25%, -50%);
+}
+
+.face-6 .dot:nth-child(4) {
+    top: 50%;
+    left: 75%;
+    transform: translate(-75%, -50%);
+}
+
+.face-6 .dot:nth-child(5) {
+    top: 75%;
+    left: 25%;
+    transform: translate(-25%, -75%);
+}
+
+.face-6 .dot:nth-child(6) {
+    top: 75%;
+    left: 75%;
+    transform: translate(-75%, -75%);
+}
