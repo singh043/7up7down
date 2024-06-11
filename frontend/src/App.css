@@ -25,3 +25,26 @@
   display: flex;
   gap: 20px;
 }
+
+.roll-btn {
+  display: flex;
+  gap: 5px;
+}
+
+.loading {
+  cursor: not-allowed;
+}
+
+.result-text {
+  font-size: 16px;
+  background-color: #1CAC78;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 8px;
+}
+
+.result-text span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
