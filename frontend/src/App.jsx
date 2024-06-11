@@ -79,6 +79,7 @@ function App() {
       <Button variant="contained"
         onClick={() => {
           generateDiceNumber();
+          setBet(null)
           setGuessResult("")
         }}
         disabled={!bet || guessedInput === "" || points === 0 || loading}
@@ -91,18 +92,21 @@ function App() {
         <Button variant="contained"
           sx={{ backgroundColor: 'green', ":hover": {backgroundColor: "green"} }}
           onClick={() => setBet(100)}
+          disabled={points < 100}
         >
           100
         </Button>
         <Button variant="contained"
           sx={{ backgroundColor: 'green', ":hover": {backgroundColor: "green"} }}
           onClick={() => setBet(200)}
+          disabled={points < 200}
         >
           200
         </Button>
         <Button variant="contained"
           sx={{ backgroundColor: 'green', ":hover": {backgroundColor: "green"} }}
           onClick={() => setBet(500)}
+          disabled = {points < 500}
         >
           500
         </Button>
